@@ -13,5 +13,10 @@ class TestBasicFunctions(unittest.TestCase):
         self.assertEqual(reverse_string('coffee'), 'eeffoc')
         self.assertEqual(reverse_string(''), '')
 
+    def test_even(self):
+        self.assertTrue(is_even(4))
+        self.assertFalse(is_even(7))
+        self.assertTrue(is_even(0))
+
 if __name__ == '__main__':
     unittest.main()
